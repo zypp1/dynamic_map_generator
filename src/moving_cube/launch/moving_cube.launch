@@ -1,0 +1,5 @@
+<launch>
+    <node name="moving_cube" pkg="moving_cube" type="moving_cube" output="screen">
+    </node>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find moving_cube)/launch/default.rviz"></node>
+</launch>
